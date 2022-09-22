@@ -339,3 +339,59 @@ p{
   color: #F03738;
 } 
 
+@media screen and (max-width:760px) ,(min-device-width: 768px) and (max-device-width: 1024px) {
+  .App{
+    width:100%;
+    height:fit-content;
+  }
+  .navbar{
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .links a{
+    display: none;
+  }
+
+  #logo{
+    display: inline-block;
+  }
+
+  main{
+    display: inline-block;
+  }
+
+  .piechart{
+    width:100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .activities{
+    position: relative;
+    bottom: 30px;
+  }
+
+  .employee-tab{
+    width:100%;
+    max-width: 400px;
+    height: auto;
+  }
+
+  table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+   th { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+  td { 
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+}
+
