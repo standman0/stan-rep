@@ -353,7 +353,7 @@ p{
     display: none;
   }
 
-  #logo{
+  .link #logo{
     display: inline-block;
   }
 
@@ -369,7 +369,8 @@ p{
   }
 
   .activities{
-    margin-bottom: 30px;
+    position: relative;
+    bottom: 30px;
   }
 
   .employee-tab{
