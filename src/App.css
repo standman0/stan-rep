@@ -1,0 +1,341 @@
+.App{
+  width: 100%;
+  height: 100vh;
+  padding:20px 20px;
+  background-color: #E5E5E5;
+}
+
+.navbar{
+  width: 100%;
+  height:63px;
+  background-color: #1E1ADD;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ .links a{
+  text-decoration: none;
+  padding-inline: 25px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+ #logo{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+}
+
+.profile{
+  width: 39px;
+  height: 39px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-inline: 20px;
+  position: relative;
+  display: inline-block;
+  background-image: url(./img/Ellipse\ 1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.profile ul {
+  padding: 10px;
+  width: 250px;
+  position: absolute;
+}
+
+.mid-nav{
+display: flex;
+justify-content: space-between;
+position: relative;
+
+}
+
+.reports{
+  padding: 15px 10px;
+}
+.reports a{
+  color: #718096;
+  font-size: 16px;
+}
+
+.reports a:first-child{
+  text-decoration: none;
+}
+
+.colapse ul {
+  height: 95px;
+  width: 208px;
+  position: absolute;
+  right:20px;
+  top: -8px;
+  border-radius: 4px;
+  list-style:none;
+  background-color: #ffffff;
+  z-index: 2;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.06), 0px 4px 6px rgba(0, 0, 0, 0.05);
+  display: none;
+}
+
+
+.pic {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #000;
+  margin: 5px 0px 0px 8px;
+}
+
+.colapse li {
+  display: flex;
+  gap: 15px;
+}
+
+.colapse .settings{
+  padding-top:5px;
+}
+
+.colapse li h2 {
+  font-size: 15px;
+  font-weight: 400;
+  color: #4A5568;
+}
+
+.colapse li p {
+  font-size:12px;
+  font-weight: 300;
+
+
+}
+
+.colapse .logout {
+  width: 100%;
+  padding: 5px 0px 5px 6px;
+  border-top: 1px solid #C2C9D1;
+}
+
+.colapse .logout span {
+  margin: 12px;
+}
+
+main {
+  display: flex;
+  height:440px;
+  width: 100%;
+  gap: 20px;
+
+}
+
+.piechart{
+  height: auto;
+  width: 550px;
+  background-color: #fff;
+  border-radius: 9px;
+  box-shadow:  0px 10px 15px rgba(0, 0, 0, 0.06), 0px 4px 6px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+.piechart h2 {
+  font-size: 18px;
+  font-weight: 400;
+  padding:10px 0 2px 12px;
+  color:  #4A5568;  
+
+}
+
+.piechart p {
+  font-size: 15px;
+  font-weight: 400;
+  padding:5px 0 0 12px;
+  color: #A0AEC0;
+}
+
+.chart {
+ height: auto;
+ width: 100%;
+ padding: 45px 50px;
+}
+
+.circle{
+  width: 233px;
+  height: 233px;
+  border-radius: 50%;
+  background-image: conic-gradient(#E289F2 0deg, #E289F2 40deg, #6448b1 40deg, #6448b1 80deg, #ACB9FF
+  80deg, #ACB9FF 120deg, #855CF8 120deg); 
+  margin: auto;
+}
+
+.activities{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+  
+.activities div {
+  background-color: #1E1ADD;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}
+
+.activities .fa div{
+  background-color: #855CF8;
+}
+
+.activities .sa div{
+  background-color: #855CF8;
+}
+.activities .ta div{
+  background-color:  #263238;
+}
+.activities .foa div{
+background-color: #718096;
+}
+
+.activities .fa h2 {
+  font-size: 13.5px;
+  font-weight: 400;
+  text-align: left;
+  padding: 10px 0px 10px 0px;
+}
+.activities .sa h2 {
+  font-size: 13.5px;
+  font-weight: 400;
+  text-align: left;
+  padding: 10px 0px 10px 0px;
+  inline-size: 150px;
+}
+.activities .ta h2 {
+  font-size: 13.5px;
+  font-weight: 400;
+  text-align: left;
+  padding: 10px 0px 10px 0px;
+}
+.activities .foa h2 {
+  font-size: 13.5px;
+  font-weight: 400;
+  text-align: left;
+  padding: 10px 0px 10px 0px;
+}
+
+.employee-tab{
+  height:auto;
+  width: 100%;
+  padding: 15px 15px 10px 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow:  0px 10px 15px rgba(0, 0, 0, 0.06), 0px 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.employee-tab h2{
+  font-weight: 400;
+  font-size: 18px;
+  color: #4A5568;
+  padding-bottom: 15px;
+}
+
+.employees-details{
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  border-radius: 1em;
+  border: 1px solid #C2C9D1;
+}
+
+.profile-pic{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #C2C9D1;
+  border-radius: 1em;
+
+}
+
+table tr {
+  background-color: #fff;
+  border-top: 1px solid #C2C9D1;
+  padding: .35em;
+
+}
+
+table tr:first-child{
+  border-top: none;
+  border-bottom: 1px solid #C2C9D1;
+}
+
+table th,
+table td {
+  padding: .825em;
+  text-align: left;
+}
+
+table th {
+  font-size: 12px;
+  font-weight: 600;
+  color: #C2C9D1;
+  letter-spacing: .1em;
+  padding: 15px 10px;
+}
+
+td {
+  padding: 15px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.name h2 {
+  font-size: 15px;
+  font-weight: 400px;
+  color: #000;
+  padding: 0;
+}
+
+.Date h2{
+  font-size: 15px;
+  font-weight: 400px;
+  color: #000;
+  padding: 0;
+}
+
+p{
+  font-size: 13px;
+  font-weight: 400;
+  color: #C2C9D1;
+}
+
+.info {
+  display: flex;
+  gap: 10px;
+}
+
+
+.icon img{
+  height: 20px;
+}
+
+.status{
+  font-weight: 500;
+  color: #3CC13B;
+}
+
+.Susie .status {
+  color: #F03738;
+} 
+
