@@ -41,12 +41,14 @@
   background-image: url(./img/Ellipse\ 1.jpg);
   background-position: center;
   background-size: cover;
+  cursor: pointer;
 }
 
 .profile ul {
   padding: 10px;
   width: 250px;
   position: absolute;
+  
 }
 
 .mid-nav{
@@ -68,27 +70,32 @@ position: relative;
   text-decoration: none;
 }
 
+.colapse{
+  cursor: pointer;
+}
+
 .colapse ul {
   height: 95px;
   width: 208px;
   position: absolute;
-  right:20px;
-  top: -8px;
+  top: 75px;
+  right: 45px;
   border-radius: 4px;
   list-style:none;
   background-color: #ffffff;
   z-index: 2;
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.06), 0px 4px 6px rgba(0, 0, 0, 0.05);
-  display: none;
 }
 
 
 .pic {
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
-  background-color: #000;
   margin: 5px 0px 0px 8px;
+  background-image: url(./img/Vector112.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .colapse li {
@@ -98,6 +105,7 @@ position: relative;
 
 .colapse .settings{
   padding-top:5px;
+  padding-left: 5px;
 }
 
 .colapse li h2 {
@@ -114,13 +122,30 @@ position: relative;
 }
 
 .colapse .logout {
+  display: flex;
+  gap: 9.5px;
   width: 100%;
   padding: 5px 0px 5px 6px;
   border-top: 1px solid #C2C9D1;
 }
 
+.colapse .logout .log{
+  height: 30px;
+  width: 30px;
+  background-image: url(./img/Vector11.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
 .colapse .logout span {
-  margin: 12px;
+  color: #F03738;
+  padding-top: 5px;
+
+}
+
+.colapse .logout span:first-child{
+
 }
 
 main {
@@ -353,7 +378,7 @@ p{
     display: none;
   }
 
-  .link #logo{
+   #logo{
     display: inline-block;
   }
 

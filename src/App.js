@@ -1,5 +1,6 @@
-import { useState} from 'react'
-import './App.css'
+import React from 'react';
+import './App.css';
+import Navbar from './Navbar';
 import image1 from './img/chevron-down-outline.svg';
 import image2 from './img/Vector.svg';
 import image3 from './img/Logan.svg';
@@ -9,64 +10,18 @@ import image6 from './img/Marie.svg';
 
 
 
-const App = () => {
-  
-  const [drop, setDrop] = useState(0);
-
-  const handleDrop = () =>{
-    document.querySelector('.mid-nav .colapse ul').style.display= 'block'
-  }
-  const handleCollapse = () =>{
-    document.querySelector('.mid-nav .colapse ul').style.display= 'none'
-  }
-
-
+function App () {
 
   return (
 
-    
-    <div className='App'>
-      <div className="navbar">
-        <div className="links">
-         <a href="/" id="logo">LOGO</a>
-        <a href="">Menu</a>
-        <a href="">Menu</a>
-        <a href="">Menu</a>
-        <a href="">Menu</a>
-        </div>
-        <div onClick={handleCollapse} onMouseEnter={handleDrop} className="profile">
-          
-          <div>
-
-          </div>
-        </div>
-        </div>
+        <div className='App'>
+      <Navbar/>
         <div className="mid-nav">
           <div className="reports">
           <a href="">Home/ </a>
           <a href="">Reports & Insights</a>
         </div>
-       <div className="colapse">
-         <ul>
-            <li>
-              <div className="pic"></div>
-              <div className="settings">
-                <h2>My Profile</h2>
-              <p>Change settings of your account</p>
-              </div>
-              
-              </li>
-            <li>
-              <div className="logout">
-                 <span><img src={image2} alt="" /></span> 
-              <span>Logout</span>
-              </div>
-             
-            </li>
-          </ul>
-       </div>
-
-        </div>
+          </div>
         
         <main>
              <div className="piechart">
@@ -147,7 +102,7 @@ const App = () => {
         </main>
       
     </div>
-  )
+  );
 }
 
 export default App
